@@ -22,7 +22,7 @@ const RecordInput = () => {
     const handleClick = async(e) => {
         e.preventDefault();
         await axios.post(`https://backend-pcvf.onrender.com/userpost/post/${user._id}`,postcredit);
-       Navigate(`https://backend-pcvf.onrender.com/${user._id}/userpost`);
+       Navigate(`/${user._id}/userpost`);
     }
 
     return (
