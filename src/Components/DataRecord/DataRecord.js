@@ -10,7 +10,7 @@ const DataRecord = () => {
   const id=location.pathname.split("/")[1];
 
 
-  const {data,loading} = useFetch(`https://backend-pcvf.onrender.com/userpost/getPosts/${id}`);
+  const {data,loading} = useFetch(`/userpost/getPosts/${id}`);
   
 
     return (
